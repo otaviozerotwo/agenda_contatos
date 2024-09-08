@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F2F2F2;
+  padding-top: 36px;
+}
+
+.main-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+  gap: 14px;
+}
+
+header img {
+  height: 48px;
+}
+
+#form-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+#form-contato input,
+#form-contato button {
+  width: 50%;
+  padding: 7px;
+  border: 1px solid #5d5d5d;
+  border-radius: 7px;
+  margin-bottom: 4px;
+}
+
+#form-contato button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #6C19FF;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#form-contato button:hover {
+  color: #3DDAB4;
+  opacity: 1;
+}
+
+.container-table {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  width: 100%;
+}
+
+table {
+  width: 50%;
+}
+
+thead th {
+  padding: 12px;
+  font-size: 24px;
+  border-bottom: 1px solid #000;
+}
+
+td {
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container-count-contatos {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  width: 100%;
+}
+
+#count-contatos {
+  padding: 18px 0;
+  text-align: center;
+  width: 50%;
+  font-size: 18px;
+  font-weight: bold;
+}

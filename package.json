@@ -1,0 +1,26 @@
+{
+  "name": "agenda_contatos",
+  "version": "1.0.0",
+  "description": "API para testar: https://jsonplaceholder.typicode.com/  \r Design inspiração: https://dribbble.com/shots/23761065-Cargo-Shipping-Client-list",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otaviozerotwo/agenda_contatos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/otaviozerotwo/agenda_contatos/issues"
+  },
+  "homepage": "https://github.com/otaviozerotwo/agenda_contatos#readme",
+  "devDependencies": {
+    "vite": "^8.2.2"
+  }
+}

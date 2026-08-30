@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+  gap: 1rem;
+  border: 1px solid var(--color-silver);
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 26.5rem) {
+  .header {
+    flex-direction: row;
+
+    .btn {
+      width: fit-content;
+    }
+  }
+}

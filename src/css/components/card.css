@@ -1,0 +1,76 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 24rem;
+  height: fit-content;
+  gap: 1.5rem;
+  background-color: var(--color-white);
+  padding: 1rem;
+  border: 1px solid var(--color-silver);
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.25rem;
+  width: 3.25rem;
+  background-color: var(--color-dim-grey);
+  border-radius: 50%;
+  color: var(--color-white);
+  
+  svg {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.card-phone-number,
+.card-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  
+  p {
+    color: var(--color-dim-grey);
+    font-weight: 500;
+  }
+  
+  span {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 26.5rem) {
+  .card-footer {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,34 @@
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/fonts.css';
+@import './components/header.css';
+@import './components/button.css';
+@import './components/card.css';
+@import './components/footer.css';
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gilroy', sans-serif;
+  background-color: var(--color-snow-drift);
+  color: var(--color-dark-jungle-green);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-inline: auto;
+  flex-grow: 1;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+}
+
+@media (min-width: 48rem) {
+  .container {
+    flex-direction: row;
+    align-items: start;
+  }
+}

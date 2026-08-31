@@ -12,11 +12,14 @@
 
 .card-header {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: center;
 
   h2 {
     font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -29,6 +32,8 @@
   background-color: var(--color-dim-grey);
   border-radius: 50%;
   color: var(--color-white);
+  flex-shrink: 0;
+  object-fit: cover;
   
   svg {
     height: 2rem;

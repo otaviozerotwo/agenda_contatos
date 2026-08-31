@@ -22,7 +22,8 @@ body {
   width: 100%;
   margin-inline: auto;
   flex-grow: 1;
-  padding: 2rem 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
   gap: 2rem;
 }
 
@@ -30,5 +31,6 @@ body {
   .container {
     flex-direction: row;
     align-items: start;
+    padding-inline: 2rem;
   }
 }

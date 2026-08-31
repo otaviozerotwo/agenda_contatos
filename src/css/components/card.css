@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 24rem;
   height: fit-content;
   gap: 1.5rem;
   background-color: var(--color-white);
@@ -72,5 +71,20 @@
 @media (min-width: 26.5rem) {
   .card-footer {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .card {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc((100% - 2rem) / 2);
+    max-width: none;
+  }
+}
+
+@media (min-width: 64rem) {
+  .card {
+    flex-basis: calc((100% - 4rem) / 3);
   }
 }

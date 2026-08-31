@@ -20,6 +20,7 @@
 @media (min-width: 26.5rem) {
   .header {
     flex-direction: row;
+    padding-inline: 2rem;
 
     .btn {
       width: fit-content;

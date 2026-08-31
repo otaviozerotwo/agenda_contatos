@@ -1,35 +1,9 @@
 import { getUsers } from './api.js';
 
-const getName = async () => {
-  const contacts = await getUsers();
-  
-  const name = contacts[0].name;
-
-  return name;
-}
-
-const getPhoneNumber = async () => {
-  const contacts = await getUsers();
-  
-  const phoneNumber = contacts[0].phone;
-
-  return phoneNumber;
-}
-
-const getEmail = async () => {
-  const contacts = await getUsers();
-  
-  const email = contacts[0].email;
-
-  return email;
-}
-
 const renderCard = async () => {
-  const name = await getName();
-  const phone = await getPhoneNumber();
-  const email = await getEmail();
+  const users = await getUsers();
 
-  const cardHtml = 
+  return users.map(user =>  
     `
     <div class="card">
       <div class="card-header">
@@ -45,16 +19,16 @@ const renderCard = async () => {
             />
           </svg>
         </div>
-        <h2 id="contactName">${name}</h2>
+        <h2 id="contactName">${user.name}</h2>
       </div>
       <div class="card-content">
         <div class="card-phone-number">
           <p>Telefone:</p>
-          <span id="contactPhoneNumber">${phone}</span>
+          <span id="contactPhoneNumber">${user.phone}</span>
         </div>
         <div class="card-email">
           <p>Email:</p>
-          <span id="contactEmail">${email}</span>
+          <span id="contactEmail">${user.email}</span>
         </div>
       </div>
       <div class="card-footer">
@@ -93,9 +67,7 @@ const renderCard = async () => {
         </a>
       </div>
     </div>
-  `;
-
-  document.getElementById('mainContainer').innerHTML = cardHtml;
+  `).join('');
 }
 
 export default renderCard;

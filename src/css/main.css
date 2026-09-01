@@ -5,6 +5,7 @@
 @import './components/button.css';
 @import './components/card.css';
 @import './components/footer.css';
+@import './components/loader.css';
 
 body {
   display: flex;
@@ -27,10 +28,26 @@ body {
   gap: 2rem;
 }
 
+.emptyList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
+  color: var(--color-dim-grey);
+  font-weight: 500;
+}
+
 @media (min-width: 48rem) {
   .container {
     flex-direction: row;
     align-items: start;
     padding-inline: 2rem;
+  }
+
+  .emptyList {
+    align-self: center;
   }
 }

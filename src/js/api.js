@@ -1,17 +1,13 @@
-const getUsers = async () => {
-  try {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users');
-    
-    if (!response.ok) {
-      throw new Error('Erro ao buscar dados!');
-    }
-    
-    const users = await response.json();
-    return users;
+const API_URL = import.meta.env.VITE_API_URL;
 
-  } catch (err) {
-    console.log(err);
+const getUsers = async () => {
+  const response = await fetch(API_URL);
+  
+  if (!response.ok) {
+    throw new Error('Falha na requisição da API');
   }
+  
+  return await response.json();
 }
 
 export { getUsers };

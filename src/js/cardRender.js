@@ -11,6 +11,8 @@ const cardRender = async (users = []) => {
             fill="currentColor"
             class="bi bi-person"
             viewBox="0 0 16 16"
+            aria-hidden="true"
+            focusable="false"
           >
             <path
               d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
@@ -36,6 +38,8 @@ const cardRender = async (users = []) => {
             fill="currentColor"
             class="bi bi-pencil-square btn-icon"
             viewBox="0 0 16 16"
+            aria-hidden="true"
+            focusable="false"
           >
             <path
               d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
@@ -53,6 +57,8 @@ const cardRender = async (users = []) => {
             fill="currentColor"
             class="bi bi-envelope-at btn-icon"
             viewBox="0 0 16 16"
+            aria-hidden="true"
+            focusable="false"
           >
             <path
               d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"

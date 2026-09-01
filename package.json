@@ -2,7 +2,7 @@
   "name": "agenda_contatos",
   "version": "1.0.0",
   "description": "API para testar: https://jsonplaceholder.typicode.com/  \r Design inspiração: https://dribbble.com/shots/23761065-Cargo-Shipping-Client-list",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/otaviozerotwo/agenda_contatos/issues"
   },

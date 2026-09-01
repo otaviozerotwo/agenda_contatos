@@ -1,7 +1,5 @@
-import { getUsers } from './api.js';
-
-const renderCard = async () => {
-  const users = await getUsers();
+const cardRender = async (users = []) => {
+  if (!users.length) return '';
 
   return users.map(user =>  
     `
@@ -49,7 +47,7 @@ const renderCard = async () => {
           </svg>
           Editar contato
         </button>
-        <a class="btn btn-tertiary" href="mailto:Sincere@april.biz" target="_blank" rel="noreferrer noopener">
+        <a class="btn btn-tertiary" href="mailto:${user.email}" target="_blank" rel="noreferrer noopener">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -70,4 +68,4 @@ const renderCard = async () => {
   `).join('');
 }
 
-export default renderCard;
+export default cardRender;

@@ -1,7 +1,7 @@
 {
   "name": "agenda_contatos",
   "version": "1.0.0",
-  "description": "API para testar: https://jsonplaceholder.typicode.com/  \r Design inspiração: https://dribbble.com/shots/23761065-Cargo-Shipping-Client-list",
+  "description": "genda Contatos é uma aplicação web desenvolvida para cadastrar, visualizar, editar e remover contatos em um interface simples e intuitiva.",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
